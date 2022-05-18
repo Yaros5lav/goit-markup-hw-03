@@ -1,0 +1,191 @@
+/* main color black #212121; */
+/* secondary blacki-greyish  #757575; */
+/* backgroud white #FFFFFF */
+/* background black (sec 2 , footer) #2F303A */
+/* background pinkish + selector-buttons bg #F5F4FA */
+/* hover + logo : #2196F3; */
+/* footer address rgba(255, 255, 255, 0.6) */
+
+
+:root {
+	--primary-text: #212121;
+	--secondary-text: #757575;
+	--background-main: #FFFFFF;
+	--background-secondary: #2F303A;
+	--background-three: #F5F4FA;
+	--company-color: #2196F3;
+	--footer-address: rgba(255, 255, 255, 0.6);
+	--logo-black: #000000;
+}
+
+body {
+	font-family: 'Roboto', 'Times New Roman' , sans-serif;
+	background-color: var(--background-main);
+	color: var(--primary-text);
+	letter-spacing: 0.03em;
+	font-size: 14px;
+}
+.section-title {
+	font-size: 36px;
+	line-height: 1.17;
+	text-align: center;
+}
+
+/* remove dots only from existing lists */
+.list {
+	list-style: none;
+}
+/* remove underline from all links */
+.link {
+	text-decoration: none;
+}
+
+
+/* links to change color when hover and focus*/
+.linkhov:hover,
+.linkhov:focus {
+	color: var(--company-color);
+}
+.linkhov.current {
+	color: var(--company-color);
+}
+/* logo */
+.logo {
+	font-family: 'Raleway', sans-serif;
+	color: var(--logo-black);
+	font-weight: 700;
+	/* line-height is 31px in figma, when i get 30.94px, should i round it up to 1.2 or include more numbers after dort? */
+	line-height: 1.19;
+	font-size: 26px;
+}
+.logo-web {
+	color: var(--company-color);
+}
+.logo-footer {
+	color: var(--background-main);
+}
+/* header (can use tag for header , but better with class) */
+.nav-link,
+.contact-link {
+	font-weight: 500;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+}
+.nav-link {
+	color: inherit;
+}
+.contact-link {
+	color: var(--secondary-text);
+}
+
+/* footer */
+.contact-link-foot,
+.print-address {
+	line-height: 1.71;
+	font-style: normal;
+	
+}
+.contact-link-foot {
+	color: var(--footer-address);
+}
+.print-address {
+	color: var(--background-main);
+}
+footer {
+	background-color: var(--background-secondary);
+}
+
+/* index html main */
+/* section 1=hero */
+.hero {
+	background-color: var(--background-secondary);
+}
+.hero-title {
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 1.36;
+	text-align: center;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: var(--background-main);
+}
+.hero-button {
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+	background-color: var(--company-color);
+	color: var(--background-main);
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 1.875;
+}
+
+/* section 2 =reasons */
+.hidden {
+	visibility: hidden;
+}
+.reasons-title {
+	font-size: 14px;
+	line-height: 1.17;
+	text-transform: uppercase;
+}
+.reasons-text {
+	font-size: 14px;
+	line-height: 1.71;
+	color: var(--secondary-text);
+}
+
+/* section 3 =processes*/
+
+
+
+/* section 4=team */
+
+/* outline- sec 3 css */
+.team {
+	background-color: var(--background-three);
+}
+.team-name,
+.team-text {
+	font-size: 16px;
+	line-height: 1.17;
+}
+.team-name {
+	font-weight: 500;
+}
+
+.team-text {
+	color: var(--secondary-text);
+}
+
+
+/* portfolio-html */
+
+.filter ,
+.hero-button {
+	cursor: pointer;
+}
+.filter {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.625;
+	color: var(--primary-text);
+}
+.filter:hover,
+.filter:focus,
+.filter.active {
+	background-color: var(--company-color);
+	color: var(--background-main);
+}
+.portfolio-title {
+	color: var(--primary-text);
+	font-size: 18px;
+	line-height: 2;
+	letter-spacing: 0.06em;
+}
+.portfolio-text {
+	color: var(--secondary-text);
+	font-size: 16px;
+	line-height: 1.875;
+}
+
+
