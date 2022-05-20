@@ -153,10 +153,7 @@ header {
 }
 
 /* footer */
-.foot-cont {
-	padding-top: 60px;
-	padding-bottom: 60px;
-}
+
 .contact-link-foot,
 .print-address {
 	line-height: 1.71;
@@ -169,7 +166,8 @@ header {
 .print-address {
 	color: var(--background-main);
 }
-footer {
+.footer {
+	padding: 60px 0px 60px 15px;
 	background-color: var(--background-secondary);
 }
 
@@ -301,7 +299,6 @@ footer {
 .team-name-text {
 	border-bottom-left-radius: 4px;
 	border-bottom-right-radius: 4px;
-	padding-right;
 	max-width: 270px;
 	text-align: center;
 	padding: 30px 0px;
