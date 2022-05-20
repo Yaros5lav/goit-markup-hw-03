@@ -167,7 +167,7 @@ header {
 	color: var(--background-main);
 }
 .footer {
-	padding: 60px 0px 60px 15px;
+	padding: 60px 0px;
 	background-color: var(--background-secondary);
 }
 
